@@ -28,10 +28,24 @@ Deliberately, no modifiers are used (no `$all`, `_all`, `$important`, …) — p
 DNS-level products **ignore any rule containing an unknown modifier**, so
 plain `||domain^` is the only form guaranteed to work everywhere.
 
+## Subscription URLs
+
+Raw list files are served straight from this repository
+(`0xcrypto/blocklists`, branch `main`). Copy-paste the URL of the list you
+want:
+
+| List | Raw URL |
+| --- | --- |
+| Meta — all services, incl. WhatsApp | `https://raw.githubusercontent.com/0xcrypto/blocklists/main/meta.txt` |
+| Meta — except WhatsApp | `https://raw.githubusercontent.com/0xcrypto/blocklists/main/meta-without-whatsapp.txt` |
+| Snapchat | `https://raw.githubusercontent.com/0xcrypto/blocklists/main/snapchat.txt` |
+| SpaceX + xAI + Tesla, incl. X/Twitter | `https://raw.githubusercontent.com/0xcrypto/blocklists/main/musk-tech-with-x.txt` |
+| SpaceX + xAI + Tesla, without X/Twitter | `https://raw.githubusercontent.com/0xcrypto/blocklists/main/musk-tech.txt` |
+
 ## Installation
 
-- **AdGuard Home**: *Filters → DNS blocklists → Add blocklist*, point it at the
-  raw file URL once the list is hosted (e.g. GitHub raw link to `meta.txt`).
+- **AdGuard Home**: *Filters → DNS blocklists → Add blocklist*, paste any URL
+  from the table above.
 - **AdGuard DNS (Private)**: *Settings → Custom lists → Add custom rule*.
 - **AdGuard apps/extension**: *Settings → Filters → Custom → Add filter*.
 
