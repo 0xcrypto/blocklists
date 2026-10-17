@@ -1,0 +1,45 @@
+! Title: SpaceX + xAI + Tesla Blocklist (including X/Twitter)
+! Version: 1.0.0
+! Last modified: 2026-10-17
+! Format: AdGuard Adblock-style DNS filtering rules (||domain^)
+! Description: Blocks Elon Musk-owned services: SpaceX (incl. Starlink),
+! xAI (incl. Grok), X/Twitter and Tesla. Compatible with AdGuard Home,
+! AdGuard DNS, AdGuard for Windows/Mac/Android/iOS and browser extensions.
+! Derived from: AdGuard Home built-in blocked-services definitions
+! ("X (formerly Twitter)"), Sinfonietta/hostfiles social-hosts, and DNS/RDAP
+! verification. Typosquat and regional ccTLD variants are excluded.
+!
+! X / Twitter (also see musk-tech.txt for a variant without X)
+||ads-twitter.com^
+||cms-twdigitalassets.com^
+||periscope.tv^
+||pscp.tv^
+||t.co^
+||tellapart.com^
+||tweetdeck.com^
+||twimg.com^
+||twitter.com^
+||twittercommunity.com^
+||twitterflightschool.com^
+||twitterinc.com^
+||twitterstat.us^
+||twtrdns.net^
+||twttr.com^
+||twttr.net^
+||twvid.com^
+||vine.co^
+||x.com^
+!
+! xAI / Grok
+||grok.com^
+||x.ai^
+!
+! SpaceX / Starlink
+||spacex.com^
+||starlink.com^
+!
+! Tesla (incl. SolarCity)
+||solarcity.com^
+||tesla.com^
+||teslamotors.com^
+||ts.la^

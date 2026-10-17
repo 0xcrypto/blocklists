@@ -1,0 +1,67 @@
+! Title: Meta Blocklist (all services, including WhatsApp)
+! Version: 1.1.0
+! Last modified: 2026-10-17
+! Format: AdGuard Adblock-style DNS filtering rules (||domain^)
+! Description: Blocks all Meta-owned services: Facebook, Instagram, Threads,
+! Messenger, WhatsApp, Meta AI, Llama, Oculus/Quest, Workplace and
+! related ad-network domains. Compatible with AdGuard Home, AdGuard DNS,
+! AdGuard for Windows/Mac/Android/iOS and browser extensions.
+! Derived from: AdGuard Home built-in blocked-services definitions
+! (facebook/instagram/whatsapp), Sinfonietta/hostfiles social-hosts, and
+! DNS/RDAP verification. Typosquat and regional ccTLD variants are excluded.
+!
+! WhatsApp (remove this section to keep WhatsApp working — see meta-without-whatsapp.txt)
+||wa.me^
+||whatsapp.cc^
+||whatsapp.com^
+||whatsapp.info^
+||whatsapp.net^
+||whatsapp.org^
+!
+! Core Facebook
+||accountkit.com^
+||atdmt.com^
+||atlasdmt.com^
+||expresswifi.com^
+||facebook.com^
+||facebook.net^
+||facebookmail.com^
+||fb.com^
+||fb.gg^
+||fb.me^
+||fb.watch^
+||fbcdn.com^
+||fbcdn.net^
+||fbsbx.com^
+||freebasics.com^
+||internet.org^
+||ogp.me^
+||thefacebook.com^
+||tfbnw.net^
+!
+! Messenger
+||fbmessenger.com^
+||m.me^
+||messenger.com^
+||messengerdevelopers.com^
+!
+! Instagram
+||cdninstagram.com^
+||ig.me^
+||instagr.am^
+||instagram.com^
+!
+! Threads
+||threads.com^
+||threads.net^
+!
+! Meta brand, AI, VR & devices
+||llama.com^
+||meta.ai^
+||meta.com^
+||oculus.com^
+||oculuscdn.com^
+!
+! Workplace
+||fbworkmail.com^
+||workplace.com^

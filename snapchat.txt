@@ -1,0 +1,33 @@
+! Title: Snapchat Blocklist (Snap Inc. services)
+! Version: 1.0.0
+! Last modified: 2026-10-17
+! Format: AdGuard Adblock-style DNS filtering rules (||domain^)
+! Description: Blocks all Snap Inc. services: Snapchat, Bitmoji, Snap Ads,
+! Snap Kit and related infrastructure domains. Compatible with AdGuard Home,
+! AdGuard DNS, AdGuard for Windows/Mac/Android/iOS and browser extensions.
+! Derived from: AdGuard Home built-in blocked-services definitions
+! (snapchat), Sinfonietta/hostfiles social-hosts, and DNS/RDAP verification.
+!
+! Snapchat app & web
+||snapchat.com^
+||feelinsonice-hrd.appspot.com^
+||sc-cdn.net^
+!
+! Corporate & developer products
+||snap.com^
+||snap-dev.net^
+||snapkit.co^
+!
+! Ads
+||snapads.com^
+!
+! Bitmoji (owned by Snap)
+||bitmoji.com^
+||bitstrips.com^
+!
+! Media / asset hosting
+||impala-media-production.s3.amazonaws.com^
+!
+! Notes:
+! - impala-media-production.s3.amazonaws.com is a Snap-owned bucket on
+!   Amazon S3; it is hostname-specific, so generic AWS traffic is unaffected.
